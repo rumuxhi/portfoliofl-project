@@ -20,11 +20,15 @@
   /* Light Mode */
   --page-bg: var(--white);
   --text-color: var(--black);
+  --title-1: var(--accent);
+  --box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
 }
 .dark {
   /* Dark Mode */
   --page-bg: #252526;
   --text-color: var(--white);
+  --title-1: var(--white);
+  --box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.8);
 }
 /* Layout */
 /* 
@@ -48,13 +52,14 @@ body {
 }
 .section {
   padding: 70px 0;
+  background-color: inherit;
 }
 .title-1 {
   margin-bottom: 60px;
   font-size: 60px;
   font-weight: 700;
   line-height: 1.3;
-  color: var(--accent);
+  color: var(--title-1);
   text-align: center;
 }
 .title-2 {
@@ -223,6 +228,7 @@ body {
   border: 1px solid var(--blackpure);
   padding: 12px 20px;
   color: var(--blackpure);
+  background-color: var(--white);
   font-weight: 500;
   transition: all 0.2s ease-in;
 }
@@ -243,9 +249,8 @@ body {
 }
 .project {
   max-width: 370px;
-  background-color: var(--white);
   border-radius: 10px;
-  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--box-shadow);
 }
 .project img {
   border-radius: 10px;
@@ -271,7 +276,7 @@ body {
   max-width: 100%;
   margin-bottom: 40px;
   border-radius: 10px;
-  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--box-shadow);
 }
 .project-details__desc {
   font-weight: 700;
